@@ -82,7 +82,7 @@ nav.navbar .navbar-brand {
     margin-right: 25px;
 }
 nav.navbar .navbar-brand img{
-  border-radius: 20px 5px 20px 5px;
+  border-radius: 40% 5% 40% 5%;
   
 }
 nav.navbar .navbar-nav .nav-link {
@@ -536,11 +536,19 @@ nav.navbar .navbar-toggler:focus {
 }
 /************ contact *************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: #282c34;
+  padding: 20px 0 20px 0;
 }
 .contact img {
-  width: 92%;
+  float: left;
+  width: 100%;
+}
+.contact .izq {
+  width: 20%;
+}
+.contact .der{
+  width: 80%;
+
 }
 .contact h2 {
 	font-size: 45px;
@@ -560,6 +568,7 @@ nav.navbar .navbar-toggler:focus {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
@@ -605,20 +614,20 @@ nav.navbar .navbar-toggler:focus {
 .contact form button:hover::before {
   width: 100%;
 }
-
 /*********** footer *************/
 .footer{
   height: fit-content;
   margin-top: 0;
-  padding: 100px 0 100px 0;
-  background: #282c34;
+  padding: 20px;
+  background: #000000;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .footer img {
-  width: 26%;
-  border-radius: 50px 10px 50px 10px;
+  width: 15%;
+  border-radius: 40% 5% 40% 5%;
+  margin-bottom: 10%;
 }
 .footer p {
   font-weight: 400;
@@ -626,7 +635,6 @@ nav.navbar .navbar-toggler:focus {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
-
 }
 /**/
 .App {

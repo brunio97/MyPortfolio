@@ -2,13 +2,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import logoBS from '../assets/logoBS.png'
 import { FaGithub,FaLinkedin} from "react-icons/fa";
 import { TiThMenuOutline } from "react-icons/ti";
-import Contact from "./Contact";
+
 function Footer () {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-        <Contact />
+
           <Col size={12} sm={6}>
             <img src={logoBS} alt="Logo" />
           </Col>

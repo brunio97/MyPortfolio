@@ -9,7 +9,7 @@
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.18.3",
-    "nodemailer": "^6.9.11",
+    "nodemailer": "^6.9.12",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
@@ -19,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
