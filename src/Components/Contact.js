@@ -50,22 +50,22 @@ return (
         </Col>
         <Col className="der" size={12} md={6}>
             <h2>Get In Touch</h2>
-              <form onSubmit={handleSubmit} method="POST">
+              <form name="Contacthelp" onSubmit="submit" method="POST" data-netlify="true">
                 <Row>
                   <Col size={12} sm={6} className="px-1">
-                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                    <input type="text"  placeholder="First Name" name="first-name" id="first-name"/>
                   </Col>
                   <Col size={12} sm={6} className="px-1">
-                    <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                    <input type="text"  placeholder="Last Name" name="last-name" id="last-name"/>
                   </Col>
                   <Col size={12} sm={6} className="px-1">
-                    <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                    <input type="email"  placeholder="Email Address" name="emailcontact" id="emailcontact"/>
                   </Col>
                   <Col size={12} sm={6} className="px-1">
-                    <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                    <input type="tel"  placeholder="Phone No." name="phonenumber" id="phonenumber"/>
                   </Col>
                   <Col size={12} className="px-1">
-                    <textarea rows="3" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                    <textarea rows="3"  placeholder="Message" name="paragraph" id="paragraph"></textarea>
                     <button type="submit"><span>{buttonText}</span></button>
                   </Col>
                   {
