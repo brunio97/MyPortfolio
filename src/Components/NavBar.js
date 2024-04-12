@@ -39,7 +39,6 @@ return(
             <Nav.Link href="#skills" className={activeLink === 'skills'? 'active navbar-link': 'navbar-links'} onClick={()=> onUpdateLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects'? 'active navbar-link': 'navbar-links'} onClick={()=> onUpdateLink('projects')}>Projects</Nav.Link>
           </Nav>
-
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://github.com/brunio97"><FaGithub className="fa-icon"/></a>
