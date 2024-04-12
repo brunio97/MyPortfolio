@@ -37,7 +37,7 @@ return (
                   </Col>
                   <Col size={12} className="px-1">
                     <textarea rows="3"  placeholder="Message" name="paragraph" id="paragraph" value={messageText} onChange={(e)=>setMessageText(e.target.value)}></textarea>
-                    <button type="submit"><span>{buttonText}</span></button>
+                    <button type="submit"><span>SEND...</span></button>
                   </Col>
                 </Row>
               </form>
