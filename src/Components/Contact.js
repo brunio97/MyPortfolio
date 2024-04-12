@@ -3,21 +3,31 @@ import { Container, Row, Col } from "react-bootstrap";
 import SendMail from '../assets/SendMail.gif'
 
 function Contact (){
-    
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-  
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("thank"))
-      .catch((error) => alert(error));
-  };
+   // State to store form data
+   const [formData, setFormData] = useState({});
+
+   // Function to handle changes in form inputs
+   const handleChange = (event) => {
+     setFormData({
+       ...formData,
+       [event.target.name]: event.target.value
+     });
+   };
+ 
+   // Function to handle form submission
+   const handleSubmit = (event) => {
+     event.preventDefault();
+     const myForm = event.target;
+     const formData = new FormData(myForm);
+ 
+     fetch("/", {
+       method: "POST",
+       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+       body: new URLSearchParams(formData).toString(),
+     })
+     .then(() => console.log("thank"))
+     .catch((error) => alert(error));
+   };
   // const formInitialDetails = {
     //     firstName: '',
     //     lastName: '',
