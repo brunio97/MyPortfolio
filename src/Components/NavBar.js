@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import { FaGithub,FaLinkedin} from "react-icons/fa";
 import { TiThMenuOutline } from "react-icons/ti";
@@ -25,7 +24,7 @@ const NavBar = () => {
     setActiveLink(value);
   }
 return(
-    <Navbar /*collapseOnSelect*/ expand="md" /*className="bg-body-tertiary"*/ className={scrolled? "scrolled":""}>
+    <Navbar expand="md" className={scrolled? "scrolled":""}>
       <Container>
         <Navbar.Brand href="/">
           <img src={logoBS} alt="Logo" />

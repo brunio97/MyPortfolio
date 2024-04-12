@@ -19,7 +19,7 @@ return (
             <img src={SendMail}alt="contact me"/>
         </Col>
         <Col className="der" size={12} md={6}>
-            <h2>Get In Touch</h2>
+           <span className="tagline">Get In Touch</span>
               <form name="contact" method="POST">
                 <input type="hidden" name="form-name" value="contact"/>
                 <Row>
@@ -48,6 +48,3 @@ return (
 );    
 }
 export default Contact;
-
-
- /*start: node server.js*/
