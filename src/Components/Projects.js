@@ -16,7 +16,7 @@ function Projects () {
             id:1,
             description:"An application designed to help users easily rent cars for their travel needs, offering a wide selection of vehicles and convenient booking options.",
             imgUrl: rentalcar,
-            link:'https://rentalcarbrunio97.netlify.app/'
+            link:'https://rentalcarsbybrunio97.netlify.app/'
         },{
             title:"Medical Appointment Booking App",  
             id:2,
