@@ -4,20 +4,20 @@ import SendMail from '../assets/SendMail.gif'
 
 function Contact (){
     
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
   
-  //   const myForm = event.target;
-  //   const formData = new FormData(myForm);
+    const myForm = event.target;
+    const formData = new FormData(myForm);
   
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //     .then(() => navigate("/thank-you/"))
-  //     .catch((error) => alert(error));
-  // };
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("thank"))
+      .catch((error) => alert(error));
+  };
   // const formInitialDetails = {
     //     firstName: '',
     //     lastName: '',
@@ -66,11 +66,19 @@ return (
         <Col className="der" size={12} md={6}>
             <h2>Get In Touch</h2>
            
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                {/* You still need to add the hidden input with the form name to your JSX form */}
-                <input type="hidden" name="form-name" value="contact" />
-     
-              </form>
+            <form
+    data-netlify="true"
+    name="pizzaOrder"
+    method="post"
+    onSubmit={handleSubmit}
+  >
+    <input type="hidden" name="form-name" value="pizzaOrder" />
+    <label>
+      What order did the pizza give to the pineapple?
+      <input name="order" type="text" onChange={handleChange} />
+    </label>
+    <input type="submit" />
+  </form>
               {/* <form name="contact" netlify>
                 <Row>
                   <Col size={12} sm={6} className="px-1">
