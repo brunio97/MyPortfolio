@@ -12,7 +12,7 @@ import mongodb_logo from '../assets/mongodb_logo.svg';
 
 function Skills() {
   return (
-    <section className="skills" id="home">
+    <section className="skills" id="skills">
         <Container>
         <span className="tagline">Skills</span>
 

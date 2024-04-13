@@ -12,14 +12,16 @@ function Contact (){
 
  console.log(firstName,lastName,emailContact,phoneNum,messageText)
 return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
     <Container>
+    <span className="tagline">Get In Touch</span>
       <Row className="align-items-center">
+      
         <Col className="izq" size={12} md={6}>
             <img src={SendMail}alt="contact me"/>
         </Col>
         <Col className="der" size={12} md={6}>
-           <span className="tagline">Get In Touch</span>
+           
               <form name="contact" method="POST">
                 <input type="hidden" name="form-name" value="contact"/>
                 <Row>
