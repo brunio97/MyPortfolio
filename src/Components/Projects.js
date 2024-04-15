@@ -7,7 +7,8 @@ import rentalcar from '../assets/ProjectsImg/rentalcar.JPG'
 import figmap from '../assets/ProjectsImg/figmap.jpg'
 import ProjectCard from "./ProjectCard";
 import figmaSales from '../assets/ProjectsImg/figmasales.JPG'
-
+import shopping from '../assets/ProjectsImg/shopping.JPG'
+import budget from '../assets/ProjectsImg/budget.JPG'
 import bootstrap_logo from '../assets/bootstrap_logo.png'
 function Projects () {
     const projects =[
@@ -28,21 +29,22 @@ function Projects () {
             title:"Shopping App",
             id:3,
             description:"A user-friendly shopping platform that enables users to browse and purchase a variety of products from different retailers, providing a seamless shopping experience from search to checkout",
-            imgUrl: medpage,
+            imgUrl: shopping,
             link:'https://shopping-app-indol.vercel.app/'
         }, 
+        {
+            title:"Company's Budget Allocation",
+            id:4,
+            description:"An intuitive budgeting tool that empowers users to track their expenses, set financial goals, and manage their finances effectively, helping them achieve financial stability and peace of mind.",
+            imgUrl: budget,
+            link:'https://react-budget-app-theta.vercel.app/'
+        },
         {
             title:"Figma Medical Appointment Booking App",
             id:6,
             description:"A Figma prototype demonstrating the user interface and flow of a medical appointment booking application, showcasing features such as appointment scheduling, doctor selection, and patient registration.",
             imgUrl: figmaMed,
             link:'https://www.figma.com/file/TrNGc9vOh0E0nL2NSYkD52/Final-Project?type=design&node-id=0%3A1&mode=design&t=j7Ax6AAJ5MplbrVe-1'
-        },{
-            title:"Company's Budget Allocation",
-            id:4,
-            description:"An intuitive budgeting tool that empowers users to track their expenses, set financial goals, and manage their finances effectively, helping them achieve financial stability and peace of mind.",
-            imgUrl: figmaSales,
-            link:'https://react-budget-app-theta.vercel.app/'
         },
         {
             title:"Figma Mobile App",
