@@ -324,6 +324,12 @@ nav.navbar .navbar-toggler:focus {
   border: 5px solid #8B4513;
   animation: updown 3s linear infinite;
 }
+.banner .align-items-center button{
+  color: #8B4513;
+}
+.banner .align-items-center button:hover{
+  color: #000;
+}
 @keyframes updown {
   0% {
     transform: translateY(-20px);

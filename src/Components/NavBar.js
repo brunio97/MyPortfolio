@@ -45,7 +45,7 @@ return(
               <br></br>
               <a href="https://www.linkedin.com/in/bruno-salinas-velez/"><FaLinkedin className="fa-icon"/></a>
             </div>
-            <button className="vvd" onClick={()=>console.log('connect')}><span>Let's <br></br>connect</span></button>
+            <button className="vvd" onClick={()=>window.location.href = '#contact'}><span>Let's <br></br>connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
